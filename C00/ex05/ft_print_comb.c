@@ -1,35 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zhliu <zhliu@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/24 00:30:39 by zhliu             #+#    #+#             */
+/*   Updated: 2024/09/24 00:30:39 by zhliu            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
-	char n1;
-	char n2;
-	char n3;
-	
+	char	n1;
+	char	n2;
+	char	n3;
+
 	n1 = '0';
-	while(n1 <= '7')
+	while (n1 <= '7')
 	{
 		n2 = n1 + 1;
-		while(n2 <= '8')
+		while (n2 <= '8')
 		{
 			n3 = n2 + 1;
-			while(n3 <= '9')
+			while (n3 <= '9')
 			{
 				write(1, &n1, 1);
 				write(1, &n2, 1);
 				write(1, &n3, 1);
 				if (!(n1 == '7' && n2 == '8' && n3 == '9'))
 					write(1, ", ", 2);
-				n3++;	
+				n3++;
 			}
 			n2++;
 		}
 		n1++;
 	}
-	
 }
 
-int main(void)
-{
-	ft_print_comb();
-}
+// int	main(void)
+// {
+// 	ft_print_comb();
+// }

@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zhliu <zhliu@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/24 00:39:51 by zhliu             #+#    #+#             */
+/*   Updated: 2024/09/24 00:39:51 by zhliu            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.c>
 
-void ft_print_combn(int n)
+void	ft_print_combn(int n)
 {
 	
 }
 
-int main(void)
+int	main(void)
 {
 	ft_print_combn();
 }
